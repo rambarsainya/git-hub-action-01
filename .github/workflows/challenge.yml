@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Get date for windows
-        run: date /T
+        run: date
   job3:
     name: gatDate3
     runs-on: macos-latest
