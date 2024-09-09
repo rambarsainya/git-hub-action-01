@@ -4,9 +4,22 @@ on:
     branches:
       - main
 jobs:
-  build:
+  job1:
+    name: getDate1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Get date
+      - name: Get date for ubuntu
+        run: date
+  job2:
+    name: gatDate2
+    runs-on: windows-latest
+    steps:
+      - name: Get date for windows
+        run: date /T
+  job3:
+    name: gatDate3
+    runs-on: macos-latest
+    steps:
+      - name: Get date for mac
         run: date
